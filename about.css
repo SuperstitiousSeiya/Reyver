@@ -1,0 +1,120 @@
+
+.resume{
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(to top  right,rgb(208, 101, 235), rgb(204, 0, 255));
+  }
+  
+.abt-container{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.abt-container h1{
+    border-bottom: 3px solid ;
+    padding: 10px;
+    color: rgb(255, 183, 88);
+    font-size: 2em;
+    text-align: center;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.Infos-container{
+    display: grid;
+    margin-top: 2em;
+    gap: 1em;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+.Infos-container >*{
+    font-family: arial;
+    background-color: rgba(255, 255, 255, 0.493);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.info-cont h2{
+    text-align: center;
+}
+
+.Infos-container >* p{
+    font-size: 1em;
+    line-height: 2em;
+    margin-top: 1em;
+    margin-top: 1em;
+ 
+}
+
+.Infos-container >*{
+
+}
+
+.info-cont p{
+    border-bottom: 1px solid rgb(226, 222, 222);
+    margin-top: 1em;
+}
+
+.info-cont{
+    grid-row: span 2;
+}
+
+.profile{
+    grid-column: span 3;
+}
+
+.description{
+    grid-row: span 1;
+    grid-column: span 3;
+}
+
+.skills{
+    grid-row: 3;
+  
+}
+
+.skills ul{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.education{
+    grid-column: span 3;
+   
+}
+
+.experience{
+    grid-column: span 4;
+    grid-row-start: 4;
+}
+
+.education h3{
+    height: fit-content;
+}
+
+.school-info{
+    display: flex;
+}
+
+.school{
+    border-right: 1px solid black;
+    padding-right: 2em;
+    font-weight: bold;
+}
+
+.school span{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.experience h3{
+   
+}
+
+.experience .job{
+    margin-top: 2em;
+}
