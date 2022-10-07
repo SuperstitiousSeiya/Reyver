@@ -1,0 +1,87 @@
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding-left: 1em;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 1px 1px 3px rgba(255, 166, 0, 0.452);
+  background-size: 600%;
+  background-position: 0%;
+  background-image: linear-gradient(to bottom  right,rgb(208, 101, 235), rgb(204, 0, 255),rgb(247, 199, 110));
+}
+
+
+header ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+header h1{
+  color: rgb(255, 229, 182);
+  font-weight: 500;
+}
+header h1 span{
+  font-size: 2em;
+  color: rgb(253, 168, 63);
+}
+
+header ul li a{
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.right-side button{
+  padding: 0.7em 1em;
+  border-radius: 10px;
+  background-image:  linear-gradient( to left, rgb(243, 206, 136),orange);
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+  border: solid;
+  border-color: rgb(240, 226, 252);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.right-side button:hover{
+  background-image: linear-gradient( to right, rgb(243, 206, 136),orange);
+  transform: translateX(1%);
+}
+
+
+header ul li{
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.4s;
+}
+
+header ul li::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(236, 136, 136);
+  transition: width 0.4s;
+}
+
+header ul li:hover::before{
+  width: 100%;
+}
+
+header ul li:hover a{
+  color: antiquewhite;
+}
+
+
+header ul li a{
+  color: white;
+}
+
