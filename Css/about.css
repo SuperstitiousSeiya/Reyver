@@ -1,0 +1,171 @@
+.about{
+    background-color: var(--main-color);
+    width: 100%;
+    height: fit-content;
+    border-top: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.about-container{
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.about-container h1{
+    color: var(--second-color);
+    margin-bottom: 1em;
+    border-bottom: 2px solid var(--second-color);
+    display: inline-block;
+    padding-right: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.about-container p{
+    color: aliceblue;
+    text-indent: 5em;
+}
+
+/* Skills  */
+
+.about-skills{
+    width: 100%;
+}
+.skill-progress{
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-bottom: 2em;
+    width: auto;
+}
+
+.about:hover .html-css::before{
+    width: 90%;
+}
+
+.about:hover .javascript::before{
+    width: 40%;
+}
+
+.about:hover .python::before{
+    width: 50%;
+}
+
+.about:hover .sql::before{
+    width: 25%;
+}
+
+.about:hover .networking::before{
+    width: 40%;
+}
+
+.skill-progress h3{
+    color: aliceblue;
+}
+
+.progress-bar{
+    margin-top: 1rem;
+    width: 100%;
+    height: clamp(1em,2.5vw,1.5em);
+    background-color: rgba(240, 248, 255, 0.61);
+    position: relative;
+    z-index: 1;
+    min-width: none;
+    border-radius: 20px;
+}
+
+.progress-bar::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 1%;
+    background-color: var(--second-color);
+    content: "";
+    text-align: center;
+    transition: width 0.8s cubic-bezier(.65,.05,.36,1);
+    border-radius: 20px;
+}
+
+/* after pseudocodes */
+
+.progress-bar::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    content: "";
+    opacity: 0;
+    color: rgb(4, 30, 148);
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.8s cubic-bezier(.65,.05,.36,1);
+    overflow: hidden;
+}   
+
+
+.html-css::after{
+    content: "90%";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+}
+
+.javascript::after{
+    content: "40%";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+}
+
+.python::after{
+    content: "50%";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+}
+
+.sql::after{
+    content: "25%";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+}
+
+.networking::after{
+    content: "40%";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+}
+
+
+.about:hover .progress-bar::after{
+    opacity: 1;
+}
+
+.about:hover .html-css::after{
+    width: 90%;
+}
+.about:hover .javascript::after{
+    width: 40%;
+}
+.about:hover .python::after{
+    width: 50%;
+}
+.about:hover .sql::after{
+    width: 25%;
+}
+.about:hover .networking::after{
+    width: 40%;
+}
